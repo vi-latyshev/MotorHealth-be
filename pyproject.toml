@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "motorhealth-be"
+version = "0.1.0"
+description = ""
+authors = ["vi.latyshev <storis2012@yandex.ru>"]
+readme = "README.md"
+packages = [
+    { include = "src" },
+]
+
+[tool.poetry.scripts]
+app = "src.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+python-jose = "^3.3.0"
+uvicorn = "^0.30.1"
+pydantic = "^2.7.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
